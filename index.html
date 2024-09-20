@@ -338,6 +338,16 @@
                                                                        
                                                                        
   </div>
+
+   <?php
+    $counterFile = "counter.txt";
+    if (file_exists($counterFile)) {
+        $counter = file_get_contents($counterFile);
+    } else {
+        $counter = 0;
+    }
+   ?>
+    <p>Number of page views: <?php echo $counter;?></p>
   
   
   
