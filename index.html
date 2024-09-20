@@ -339,20 +339,12 @@
                                                                        
   </div>
 
-   <?php
-    $counterFile = "counter.txt";
-    if (file_exists($counterFile)) {
-        $counter = file_get_contents($counterFile);
-    } else {
-        $counter = 0;
-    }
-   ?>
-    <p>Number of page views: <?php echo $counter;?></p>
+   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">Number of page views: <span id="busuanzi_value_site_pv"></span></span>
+    
   
   
-  
-  
- 
+
  
  
   <!-- End page content -->
